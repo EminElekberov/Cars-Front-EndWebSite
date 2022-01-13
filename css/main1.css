@@ -1,0 +1,719 @@
+@font-face{
+    font-family:'Releway';
+    src:url('../fonts/Raleway-Regular.ttf')
+}
+
+body{
+    background: #fff;
+    color: #3f3f3f;
+    font: 14px;
+    line-height: 28px;
+    font-family: 'Releway', arial;
+}
+h1{
+    font-size: 52px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+.sectionheader {
+    background: #550D16;
+    border-bottom: 6px solid #000; 
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 16px;
+    color: #500D16; 
+    transition: all .5s ease;
+}
+.sectionarea {
+    padding: 80px 0;
+}
+
+
+.contanier{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.feauturesbody .contanier{
+    justify-content:space-between;
+}
+.col3{
+    flex-grow: 1;
+    width: 33.33%;
+}
+.enginebody .contanier{
+    justify-content: space-between;
+}
+.col2{
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+header .logo{
+    margin-right: auto;
+}
+
+header .logo img{
+    display: block;
+    height: 70px;
+}
+
+.menu li{
+    float: left;
+    list-style: none;
+}
+.menu li a{
+    padding: 27px 17px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #333;
+    transition: all .5s ease;
+    
+}
+.menu li:hover a{
+    background: #500D16;
+    color: white;
+}
+#mainslider{
+    height: 600px;
+    background: url(../img/esas.jpg) center center;
+    background-size: cover;
+}
+.slider{
+    width:100%;
+}
+#maincaption{
+    height: 600px;
+    background: rgba(0,0,0, .5)
+} 
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+.feauturestop{
+    text-align: center;
+}
+.item{
+    padding: 10px 20px;
+}
+.zoom{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+.zoom img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+.item .itemtext{
+    text-align: center;
+    border: 1px solid #500D16;
+}
+
+.item:hover .zoom img{
+    transform: scale(1.25);
+    
+}
+.item:hover h3 {
+    color: #fff;
+}
+.item:hover .itemtext {
+    background: #500d16;
+    color: #fff;
+    transition: all .5 ease;
+}
+.btndetails {
+    color: #500d16;
+    text-decoration: none;
+    padding: 1px 10px;
+    border: 1px solid #500d16;
+    transition: all .5 ease;
+}
+.item:hover .btndetails{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.itemtext p{
+    margin: 20px 0;
+}
+
+
+#paralax{
+    width: 100%;
+    height: 100%;
+    background:url(../img/spedometr.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+    text-align: center;
+    
+}
+#paralax p{
+    color: #fff;
+     
+}
+.enginetop {
+    text-align: center;
+}
+.enginecontanier {
+    position: relative;
+    width: 100%;
+}
+.imageover {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.engineoverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(80,13,22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    
+}
+.enginecontanier:hover .engineoverlay{
+    width: 100%;
+}
+
+.enginetext {
+    white-space: nowrap;
+    color:#fff;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 20px;
+    
+}
+.engineoverlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(80,13,22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    
+}
+.enginecontanier:hover .engineoverlay2{
+    width: 100%;
+    left: 0;
+}
+footer{
+    background: #500d16;
+    text-align: center;
+    margin-top: 100px;
+}
+.footeritem {
+    padding: 20px;
+}
+.footeritem img{
+    height: 50px;
+    opacity: .5;
+}
+footer h3{
+    color: #fff;
+    font-size: 18px; 
+    letter-spacing: 2px;
+    margin-bottom: 10px; 
+    transition: .3s ease;
+}
+
+
+
+footer .fab{
+    font-size: 30px;
+    color: #95a5a6;
+    line-height: 50px;
+}
+footer .fab:hover{
+    color: #fff;
+}
+footer p{
+    color: #95a5a6;
+    line-height: 20px;
+}
+
+
+
+.footerlinks{
+    list-style: none;
+    
+}
+.sociallinks{
+    list-style:none;
+}
+.footerlinks a{
+    text-decoration: none;
+    color: #95a5a6; 
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+.footerlinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.sociallinks li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+#carsslider{
+    height: 250px;
+    background: url(../img/bqc.jpg) center center;
+    background-size: cover;
+}
+
+#carscaption{
+    height: 250px;
+    background: rgba(0,0,0, .6)
+}
+#inspect{
+    background-color: #f5f5f5;
+}
+.inspecttop{
+    text-align: center;
+    font-size: 14px;
+}
+
+.inspectbody .col2{
+    display: flex;
+    
+}
+.inspectimg {
+    width: 40%;
+}
+.inspectimg img{
+    width: 100%;
+    height: auto;
+}
+.inspecttext{
+    width: 60%;
+    padding-left: 10px;
+}
+.date{
+    color: #333;
+    font-size: 12px;
+    font-style: italic;
+}
+h4{
+    color: #500d16;
+    font-size: 14px;
+    font-weight: bold;
+}
+.inspecttext a{
+    float: right;
+    text-decoration: none;
+    color: #500d16;
+}
+.inspecttext a:hover{
+    text-decoration: underline;
+}
+.projecttop{
+    text-align: center;
+}
+#projectX .contenierfluid{
+    height: 700px;
+    background: url(../img/aston.jpg) center center no-repeat;
+    background-size: cover;
+}
+.captionx{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background: rgba(0,0,0, .5);
+}
+.projectxinfo{
+    position: relative;
+    top: 50%; 
+    
+}
+.projectxtitle{
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.projectxbin{
+    background-color: #500d16;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 40px;
+    transition: all .5s ease;
+}
+.projectxbin:hover{
+    background-color: #fff;
+    color: #500d16;
+}
+.projectxtext {
+    color: #fff;
+}
+.projectxhighlight{
+    display: inline-block;
+    color: #fff;
+    background-color: #500d16;
+    padding: 30px;
+    
+}
+.contenierfluid{
+    padding: 0;
+}
+.projectxdetails li {
+    list-style: none;
+}
+#aboutslider{
+    height: 250px;
+    background: url(../img/duyme2.jpg) center center;
+    background-size: cover;
+}
+
+#aboutcaption{
+    height: 250px;
+    background: rgba(0,0,0, .6)
+}
+#ourhistory{
+    background-color: #f5f5f5;
+}
+.ourhistorytop{
+    text-align: center;
+}
+.ourhistorybody .containerfluid{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.ourhistorybody .col2{
+    display: flex;
+}
+.ourhistorydate{
+    flex: 1;
+    text-align: center;
+    background-color: #500d16;
+    color: #fff;
+}
+.ourhistorydate p{
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ourhistoryimage{
+    flex: 2;
+}
+.ourhistoryimage img {
+    width: 100%;
+    height: 100%;
+}
+.ourhistorytext{
+    flex: 3;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+
+
+.ourhistorytext p{
+    text-align: center;
+}
+.teamtop h2{
+    text-align: center;
+    background: #500d16;
+    margin-left: 600px;
+    margin-right: 600px;
+    color: #fff;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+.teamtop p{
+    text-align: center;
+}
+.teambody .contanierfluid{
+    display: flex;
+    width: 100%;
+}
+.teammember {
+    position: relative;
+    width: 100%;
+}
+.teammmeberimg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.teammember:hover .memberoverlay {
+    opacity: 0;
+}
+.teammember: hover .teammemberinfo{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+.teamtitle{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teammemberinfo{
+    color: #fff;
+    background-color: rgba(80,13,22, .7);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5 ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.membersociallinks{
+    text-align: center;
+    
+}
+.membersociallinks li{
+    list-style: none;
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.membersociallinks  .fab{
+    color: #fff;
+}
+#contactslider{
+    height: 250px;
+    background: url(../img/seher.jpg) center center;
+    background-size: cover;
+}
+
+#contactcaption{
+    height: 250px;
+    background: rgba(0,0,0, .6)
+}
+
+#gallery{
+    background-color: #f5f5f5;
+}
+
+
+
+.gallerytop{
+    text-align: center;
+}
+
+.galleryslider{
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.galleryslideritem{
+    width: 300%;
+    position: relative;
+    left: 0;
+    animation: slideanimation 20s infinite;
+}
+.galleryslideritem img{
+    width: 20%;
+    float: left;
+    height: auto;
+    
+}
+@keyframes slideanimation{
+    0% {left: 0;}
+    25% {left: -100%;}
+    50% {left: -200%;}
+    75% {left: -100%;}
+    100% {left: 0;}
+}
+.contacttop{
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+.contactform{
+    margin: 0 auto;
+    width: 60%;
+}
+.formitem{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formshape{
+    color: #fff;
+    float: left;
+    background-color: #500d16;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+.formfield{
+    color: #fff;
+    background-color: #500d16;
+    border: none;
+    padding: 15.5px;
+    width: 92%;
+    display: block; 
+    font-size: 14px;
+}
+.formBtn{
+    display: block; 
+    border: none;
+    background-color: #500d16;
+    color: #fff;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formBtn:hover{
+    background-color: #84191;
+    
+}
+
+@media (max-width: 960px){
+    .caption h1{
+        color: red;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    footer .fab{
+        font-size: 24px;
+        color: yellow;
+    }
+    footer h3{
+        font-size: 16px;
+        
+    }
+    .inspectbody .contanier{
+        flex-direction: column;
+    }
+    .inspectbody .contanier .col2{
+        width: 100%; 
+    }
+    .ourhistorybody .col2 {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 720px){
+    header .contanier{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    header .logo{
+        margin: 0 auto;
+    }
+    
+    
+    .caption h1{
+        color: yellow;
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+    .feauturesbody .contanier{
+        flex-direction: column;
+    }
+    .feauturesbody .contanier .col3{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .enginebody .contanier{
+        flex-direction: column;
+    }
+    .enginebody .contanier .col2{
+        width: 80%;
+        margin: 0 auto;
+    }
+    footer .contanier {
+        flex-direction: column;
+    }
+    footer .contanier .col3{
+        width: 100%;
+    }
+    .inspectbody .contanier .col2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .teammemberinfo{
+        font-size: 11px;
+        padding: 10px;
+    }
+    .teamtitle{
+        font-size: 14x;
+    }
+}
+
+@media (max-width: 540px){
+    .caption h1{
+        color: blue;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .caption p{
+        color:cadetblue;
+        font-size: 15px;
+    }
+    .feauturesbody .contanier .col3{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .enginebody .contanier .col2{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sectionheader{
+       font-size: 20px; 
+    }
+    .contactform{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
